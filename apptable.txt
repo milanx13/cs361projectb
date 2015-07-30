@@ -1,0 +1,16 @@
+CREATE TABLE `apps` (
+`aid` int(11) NOT NULL AUTO_INCREMENT,
+`aname` varchar(255) NOT NULL,
+`description` varchar(255),
+`url` varchar(255),
+`location` tinyint(1),
+`history` tinyint(1),
+`contacts` tinyint(1),
+`messages` tinyint(1),
+`calllog` tinyint(1),
+`runningapps` tinyint(1),
+`identity` tinyint(1),
+`microphone` tinyint(1),
+PRIMARY KEY (`aid`),
+UNIQUE KEY (`aname`)
+) ENGINE=InnoDB;
